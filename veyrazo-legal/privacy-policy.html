@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veyrazo Privacy Policy</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f6f1e7;
+            --card: #fffdf8;
+            --ink: #183f36;
+            --muted: #4e655f;
+            --line: #cfdcd4;
+            --accent: #2a7d69;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.65;
+            background: linear-gradient(180deg, #fbf8f1 0%, var(--bg) 100%);
+            color: var(--ink);
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px 64px;
+        }
+
+        .hero,
+        section {
+            background: rgba(255, 253, 248, 0.95);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 18px 40px rgba(24, 63, 54, 0.08);
+        }
+
+        .hero {
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, rgba(204, 233, 220, 0.9), rgba(255, 250, 240, 0.98));
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 12px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        p,
+        li {
+            font-size: 1rem;
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .updated {
+            margin-top: 16px;
+            font-weight: 600;
+            color: var(--ink);
+        }
+
+        .grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        @media (min-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section class="hero">
+        <div class="eyebrow">Sloth Bloom</div>
+        <h1>Veyrazo Privacy Policy</h1>
+        <p>Veyrazo is a home-friendly fitness companion that helps users create an account, choose fitness preferences, follow routines, track progress, complete daily quests, and grow an in-app tree based on consistent activity.</p>
+        <p>This policy describes the data Veyrazo uses for account security, app personalization, progress tracking, social features, and cloud sync.</p>
+        <p class="updated">Last updated: June 30, 2026</p>
+    </section>
+
+    <section>
+        <h2>Account Data</h2>
+        <p>Veyrazo may collect or store the following when needed for the selected feature:</p>
+        <ul>
+            <li>Username</li>
+            <li>Email address</li>
+            <li>Display name</li>
+            <li>Birthday</li>
+            <li>Profile photo when uploaded by the user</li>
+            <li>Authentication status, session status, email verification status, and account security preferences</li>
+        </ul>
+        <p>This data is used to create and secure the account, support sign-in by email or username, restore account data across devices, support account recovery and two-factor security, and display safe public profile details for friends, friend challenges, and leaderboard features.</p>
+    </section>
+
+    <section>
+        <h2>Fitness Profile Data</h2>
+        <p>Veyrazo may collect or store the following when needed for the selected feature:</p>
+        <ul>
+            <li>Main fitness goal</li>
+            <li>Fitness level</li>
+            <li>Activity level</li>
+            <li>Age, height, and weight when provided</li>
+            <li>Workout days, preferred workout duration, routine length, and low-impact preferences</li>
+            <li>Limitation or injury notes entered by the user</li>
+        </ul>
+        <p>This data is used to personalize workout recommendations, generate routine plans, avoid unsafe intensity jumps, and improve safety guidance and low-impact alternatives.</p>
+    </section>
+
+    <section>
+        <h2>Progress And Activity Data</h2>
+        <p>Veyrazo may collect or store the following when needed for the selected feature:</p>
+        <ul>
+            <li>Weight logs and hydration logs</li>
+            <li>Step totals and workout completions</li>
+            <li>Exercises completed, skipped exercises, sets, reps, duration, and estimated calories</li>
+            <li>Daily quest completions and recovery task completions</li>
+            <li>Outdoor activity summaries such as activity type, duration, distance, pace, speed, estimated calories, step estimate, elevation range, target type, and route point count</li>
+            <li>Private route points when outdoor tracking is enabled</li>
+            <li>Tree progress and achievement unlock summaries</li>
+        </ul>
+        <p>This data is used to show dashboard and progress summaries, restore progress after sign-in, generate tree growth and achievement summaries, and support friend challenges and leaderboard-safe summaries without exposing private health details.</p>
+    </section>
+
+    <section class="grid">
+        <div>
+            <h2>Health Connect</h2>
+            <p>When available and enabled by the user, Veyrazo requests Health Connect read access for steps, distance, active calories burned, exercise sessions, and compatible heart-rate data when supported by the connected wearable or health source.</p>
+            <p>This data is used to automatically update step totals, improve progress summaries, and reduce manual logging. Users can deny Health Connect access and continue using manual tracking.</p>
+        </div>
+        <div>
+            <h2>Location Data</h2>
+            <p>When the user starts an outdoor walk, run, hike, cycling, or supported cardio tracking session, Veyrazo requests location permission to estimate route, distance, pace, speed, time, elevation, and estimated calories.</p>
+            <p>Precise route data is private by default. Public sharing, friends, and leaderboards must use sanitized summaries and must not expose exact home or work routes.</p>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div>
+            <h2>Notifications</h2>
+            <p>Veyrazo requests notification permission for workout reminders, safety prompts, achievement alerts, and weekly summaries. Users can disable reminder-style notifications from settings.</p>
+        </div>
+        <div>
+            <h2>Cloud Storage And Sync</h2>
+            <p>Veyrazo uses Firebase Authentication, Cloud Firestore, Firebase Storage, and Cloud Functions for identity, account data, onboarding, routine, progress, tree, and achievement support. Some data is stored locally on the device first, then synced when the user is signed in.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Public Data</h2>
+        <p>The app may create public profile summaries with safe fields only, including display name, username, profile photo URL, tree stage, and total achievement count.</p>
+        <p>Public profile summaries must not include email address, birthday, exact weight, limitation notes, or precise route and location data.</p>
+    </section>
+
+    <section>
+        <h2>Data We Do Not Store</h2>
+        <ul>
+            <li>Passwords or password hashes in Firestore</li>
+            <li>Raw two-factor codes</li>
+            <li>Full contact lists</li>
+            <li>Precise route and location data in public documents</li>
+            <li>Unredacted support or debug logs</li>
+        </ul>
+        <p>Firebase Authentication manages password credentials.</p>
+    </section>
+
+    <section>
+        <h2>Data Sharing</h2>
+        <p>Veyrazo does not sell personal data.</p>
+        <p>Veyrazo may use safe public summaries for friend requests, friend challenges, leaderboards, invites, ads, and donations. These summaries are limited to profile and activity information needed to operate those features and do not include private account data, exact weight, limitation notes, or precise route points.</p>
+    </section>
+
+    <section class="grid">
+        <div>
+            <h2>User Controls</h2>
+            <ul>
+                <li>Sign out</li>
+                <li>Change account details</li>
+                <li>Reset local progress</li>
+                <li>Delete the account</li>
+                <li>Disable notification reminders</li>
+                <li>Control Health Connect access through Android system settings</li>
+                <li>Control location permission through Android system settings</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Data Retention</h2>
+            <p>Local data remains on the device until the user clears app data, resets local progress, signs out where local reset is triggered, or deletes the account.</p>
+            <p>Cloud data remains until the user deletes the account or Sloth Bloom removes it as part of normal security, maintenance, or legal compliance processes.</p>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div>
+            <h2>Children</h2>
+            <p>Veyrazo is not intended for children under 13. Account creation requires a birthday that indicates the account holder is at least 13.</p>
+        </div>
+        <div>
+            <h2>Safety</h2>
+            <p>Veyrazo provides general fitness and wellness guidance. It is not medical advice, diagnosis, treatment, physical therapy, or emergency care.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>For support or privacy questions, use the Help and Legal sections in the Veyrazo app. A public support email or web form should be connected before full production launch.</p>
+    </section>
+</main>
+</body>
+</html>
