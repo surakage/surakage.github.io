@@ -39,7 +39,7 @@
     h1 { font-size: clamp(2rem, 5vw, 3rem); }
     h2 { font-size: 1.35rem; color: var(--accent); }
     p, li { color: var(--muted); font-size: 1rem; }
-    ol { margin: 10px 0 0 22px; padding: 0; }
+    ul, ol { margin: 10px 0 0 22px; padding: 0; }
     a { color: var(--accent); }
     .eyebrow {
       text-transform: uppercase;
@@ -61,7 +61,7 @@
   <section>
     <div class="eyebrow">Sloth Bloom</div>
     <h1>Veyrazo Account Deletion</h1>
-    <p>This page explains how to delete your Veyrazo account and what data is removed when the deletion request is completed.</p>
+    <p>This page explains the actual Veyrazo in-app account-deletion flow and what Veyrazo removes when the request finishes.</p>
     <p class="updated">Last updated: July 4, 2026</p>
   </section>
 
@@ -69,16 +69,28 @@
     <h2>Delete Your Account In The App</h2>
     <ol>
       <li>Open Veyrazo.</li>
-      <li>Go to the account or settings area that contains account management.</li>
-      <li>Choose the delete-account option.</li>
-      <li>Complete any required security or confirmation steps.</li>
+      <li>Open <strong>Settings</strong>, then go to the <strong>Account</strong> section.</li>
+      <li>If the <strong>Delete Account</strong> option is locked, verify your account email first. Veyrazo only enables sensitive account changes after email verification.</li>
+      <li>Open <strong>Delete Account</strong>.</li>
+      <li>If your Veyrazo account uses an email and password sign-in, enter your current password and type <strong>DELETE</strong>.</li>
+      <li>If your Veyrazo account uses Google sign-in only, type <strong>DELETE</strong>. That screen does not require your current password.</li>
+      <li>Tap <strong>Permanently delete account</strong> and complete any sign-in refresh prompt if Veyrazo asks you to sign in again before finishing deletion.</li>
     </ol>
-    <p>If extra verification is required, follow the in-app prompts before the deletion request can finish.</p>
+    <p>Account deletion is permanent. It is different from resetting progress or changing onboarding choices.</p>
   </section>
 
   <section>
     <h2>What Is Removed</h2>
-    <p>When account deletion completes, Veyrazo is designed to remove the Firebase Authentication account, private Firestore account data, public profile data, username reservation data owned by that account, and profile-photo storage tied to that account, subject to normal security, fraud-prevention, backup, and legal-retention limits.</p>
+    <p>When deletion completes, Veyrazo is designed to remove the Firebase Authentication sign-in account and the account-linked records Veyrazo stores for that user.</p>
+    <ul>
+      <li>Your private user document and its account subcollections in Veyrazo's Firestore data.</li>
+      <li>Your public profile record and public leaderboard entry.</li>
+      <li>Friend requests, friendships, challenge links, and block-list records tied to that account.</li>
+      <li>Your username reservation, if that reservation is owned by the deleted account.</li>
+      <li>Your friend-code reservation, if that code is owned by the deleted account.</li>
+      <li>Profile-photo or similar uploaded account files tied to that account.</li>
+    </ul>
+    <p>Some limited records may remain temporarily in backups, security logs, fraud-prevention systems, or where retention is required by law.</p>
   </section>
 
   <section>
