@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  --forest: #123c35;
+  --moss: #24755f;
+  --leaf: #49a47f;
+  --cream: #f6f1e5;
+  --paper: rgba(255, 253, 247, 0.96);
+  --muted: #536b65;
+  --line: rgba(18, 60, 53, 0.16);
+  --sun: #e5b94c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--forest);
+  background:
+    radial-gradient(circle at 88% 5%, rgba(229, 185, 76, 0.34), transparent 24rem),
+    radial-gradient(circle at 5% 35%, rgba(73, 164, 127, 0.22), transparent 26rem),
+    linear-gradient(180deg, #fcfaf3 0%, var(--cream) 100%);
+}
+
+main {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+.hero,
+.card,
+section {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: clamp(22px, 4vw, 32px);
+  box-shadow: 0 18px 48px rgba(18, 60, 53, 0.09);
+}
+
+.hero {
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(214, 239, 224, 0.97), rgba(255, 250, 235, 0.98));
+}
+
+section { margin-top: 20px; }
+
+h1,
+h2,
+h3 { margin: 0 0 12px; line-height: 1.18; }
+
+h1 { font-size: clamp(2.25rem, 6vw, 3.8rem); }
+h2 { color: var(--moss); font-size: 1.5rem; }
+h3 { font-size: 1.08rem; }
+p, li { color: var(--muted); }
+ul { margin: 10px 0 0 20px; padding: 0; }
+a { color: var(--moss); font-weight: 650; }
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--moss);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.updated { color: var(--forest); font-weight: 700; }
+
+.actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--moss);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.button.secondary {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--forest);
+}
+
+.grid { display: grid; gap: 16px; }
+.note { border-left: 4px solid var(--sun); padding-left: 16px; }
+.footer { margin-top: 24px; text-align: center; font-size: 0.92rem; }
+
+@media (min-width: 760px) {
+  .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
